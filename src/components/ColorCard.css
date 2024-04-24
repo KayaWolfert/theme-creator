@@ -1,0 +1,32 @@
+
+.color-info {
+    flex:2;
+    background-color:rgb(226, 226, 226);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+.color-show {
+    flex:3;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.role {
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top:10px;
+    font-size: 1em;
+}
+
+.hex  { 
+    padding-left: 15px;
+    font-size: 0.8em;
+}
+
+h2 {
+    padding-left: 20px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}

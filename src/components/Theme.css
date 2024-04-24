@@ -1,0 +1,11 @@
+.theme-section{
+    margin-bottom: 30px;
+}
+
+.toggle-button {
+    all: unset;
+    background-color: transparent;
+    cursor: pointer;
+    display:flex;
+    gap: 5px;
+  }

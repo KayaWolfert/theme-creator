@@ -1,0 +1,29 @@
+.add-themes{
+    height: 200px;
+    background-color:rgb(226, 226, 226);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.add-themes h2{
+    
+    padding: 10px;
+    text-align: center;
+}
+
+.color-input {
+    height: 50px;
+    width: 50px;
+    
+}
+
+.color-fields {
+    margin: 20px;
+   display: flex;
+   justify-content: center;
+   border: 0px;
+}
+
