@@ -2,7 +2,6 @@ import Theme from "./components/Theme.js";
 import { themes as initialThemes } from "./db.js";
 import "./App.css";
 import ThemeForm from "./components/ThemeForm.js";
-import { useState } from "react";
 import { v4 as uuid } from "uuid";
 import useLocalStorageState from "use-local-storage-state";
 
@@ -23,7 +22,6 @@ function App() {
   return (
     <>
       <header>
-        {" "}
         <h1>Theme Creator </h1>
       </header>
       <main>

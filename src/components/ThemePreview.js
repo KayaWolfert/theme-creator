@@ -3,11 +3,11 @@ import "./ThemePreview.css";
 export default function ThemePreview({ theme }) {
   return (
     
-      <article className="article-preview">
+      <article className="theme-preview__article">
         {theme.colors.map((color) => {
           return (
             <div key={color.role}
-              className="color-preview"
+              className="theme-preview__color-preview"
               style={{ backgroundColor: color.value }}
             >
               

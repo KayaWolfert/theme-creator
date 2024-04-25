@@ -1,4 +1,4 @@
-.list-article {
+.color-list__article {
     display:flex;
     width: 90%;
     margin-left: auto;
@@ -8,6 +8,3 @@
     
 }
 
-.list-section{
-    margin-bottom: 40px;
-}

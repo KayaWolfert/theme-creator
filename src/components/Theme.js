@@ -12,8 +12,8 @@ export default function Theme({ theme, name , onDelete}) {
   }
 
   return (
-    <section className="theme-section">
-      <button className="toggle-button" onClick={toggleDetails}>
+    <section className="theme__section">
+      <button className="theme__toggle-button" onClick={toggleDetails}>
         <h2> {name}</h2>
         {showDetails ? (
           <IconChevronUp size="1.5rem" />
@@ -23,7 +23,7 @@ export default function Theme({ theme, name , onDelete}) {
       </button>
       {showDetails ? (
       <>
-        <button className="delete-theme-button" id={theme.id} onClick={()=> onDelete(theme.id)}> delete Theme</button>
+        <button className="theme__delete-button" id={theme.id} onClick={()=> onDelete(theme.id)}> delete Theme</button>
         <ColorList theme={theme} />
         </>
       ) : (

@@ -1,4 +1,4 @@
-.color-preview{
+.theme-preview__color-preview{
     height: 50px;
     width: 50px;
     margin-left: 10px;
@@ -6,13 +6,8 @@
     
 }
 
-.article-preview{
+.theme-preview__article{
     display:flex;
     margin-left: 10px;
 }
 
-.section-preview{
-    
-    margin-bottom: 30px;
-   
-}

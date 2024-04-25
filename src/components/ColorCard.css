@@ -1,5 +1,5 @@
 
-.color-info {
+.color-cards__color-info {
     flex:2;
     background-color:rgb(226, 226, 226);
     border-top-left-radius: 15px;
@@ -7,20 +7,25 @@
 
 }
 
-.color-show {
+.color-cards__color-show {
     flex:3;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
-.role {
+.color-cards__role {
     font-weight: bold;
     padding-left: 15px;
     padding-top:10px;
     font-size: 1em;
 }
 
-.hex  { 
+.color-cards__hex  { 
+    padding-left: 15px;
+    font-size: 0.8em;
+}
+
+.color-cards__name {
     padding-left: 15px;
     font-size: 0.8em;
 }

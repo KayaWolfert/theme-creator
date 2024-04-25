@@ -36,40 +36,47 @@ export default function ThemeForm({onSubmit}) {
   
 
   return (
-    <form className="add-themes" onSubmit={handleSubmit}>
-      <h2> add new Themes here</h2>
-      <label htmlFor="name"> Theme Name</label>
-      <input type="text" name="name" id="name" required></input>
-      <fieldset className="color-fields">
+    <form className="theme-form__add-themes" onSubmit={handleSubmit}>
+      <h2> Add new Themes</h2>
+        <fieldset className="theme-form__color-fields">
         <input
-          className="color-input"
+          className="theme-form__color-input"
           type="color"
           name="primary"
           id="primary"
+          defaultValue="#3c868b"
         ></input>
         <input
-          className="color-input"
+          className="theme-form__color-input"
           type="color"
           name="secondary"
           id="secondary"
+          defaultValue="#95f0f6"
         ></input>
         <input
-          className="color-input"
+          className="theme-form__color-input"
           type="color"
           name="surface"
           id="surface"
+          defaultValue="#d9d4c1"
         ></input>
         <input
-          className="color-input"
+          className="theme-form__color-input"
           type="color"
           name="surfaceon"
           id="surfaceon"
+          defaultValue="#8f4360"
         ></input>
       </fieldset>
-      <button className="form-submit-button" type="submit">
+      <div className="theme-form__part-wrapper">
+      <label className="theme-form__label-name" htmlFor="name"> Theme Name:</label>
+      <input className="theme-form__name-input" type="text" name="name" id="name" required></input>
+      <button className="theme-form__submit-button" type="submit">
         
         add your Theme
       </button>
+      </div>
+      
     </form>
   );
 }

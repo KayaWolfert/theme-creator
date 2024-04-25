@@ -1,11 +1,20 @@
-.theme-section{
+.theme__section{
     margin-bottom: 30px;
 }
 
-.toggle-button {
+.theme__toggle-button {
     all: unset;
     background-color: transparent;
     cursor: pointer;
     display:flex;
     gap: 5px;
+  }
+
+  .theme__delete-button {
+    padding: 5px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: tomato;
+    border: 0px;
+    border-radius: 5px;
   }
