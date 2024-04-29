@@ -1,6 +1,6 @@
 import "./EditForm.css";
 
-export default function EditForm({ onSubmit, theme, id }) {
+export default function EditForm({ onSubmit, theme, id, toggleEdit}) {
   const themeToEdit = theme;
 
   function handleSubmit(event) {
@@ -32,6 +32,8 @@ export default function EditForm({ onSubmit, theme, id }) {
     };
     console.log(editedTheme);
     onSubmit(editedTheme, id);
+    toggleEdit();
+
   }
 
   return (
