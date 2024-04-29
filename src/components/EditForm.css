@@ -1,0 +1,21 @@
+.edit-form__color-input{
+    height: 50px;
+    width: 50px;
+}
+
+.edit-form__color-fields {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    border: 0px;
+    gap: 10px;
+ }
+
+ .edit-form__add-themes{
+    height: 250px;
+    background-color:rgb(226, 226, 226);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px;
+}
