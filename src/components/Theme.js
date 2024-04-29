@@ -15,7 +15,7 @@ export default function Theme({ theme, name , onDelete, onEdit}) {
 
   function toggleEdit(){
     setShowEdit(!showEdit);
-    console.log(showEdit);
+    
   }
 
   return (
@@ -32,7 +32,7 @@ export default function Theme({ theme, name , onDelete, onEdit}) {
       <>
         <button className="theme__delete-button" id={theme.id} onClick={()=> onDelete(theme.id)}> delete Theme</button>
         <button className="theme__edit-button" id={theme.id} onClick={toggleEdit}> edit theme</button> 
-        {showEdit && <EditForm onSubmit={onEdit} id={theme.id} theme={theme}/>}
+        {showEdit && <EditForm toggleEdit={toggleEdit} onSubmit={onEdit} id={theme.id} theme={theme}/>}
         <ColorList theme={theme} />
         
         </>
