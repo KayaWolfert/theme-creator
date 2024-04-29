@@ -44,6 +44,7 @@ export default function EditForm({ onSubmit, theme, id }) {
         name="name"
         id="name"
         placeholder={themeToEdit.name}
+        required
       ></input>
       <fieldset className="edit-form__color-fields">
         {themeToEdit.colors.map((color) => (
