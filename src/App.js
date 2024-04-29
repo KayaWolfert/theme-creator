@@ -19,6 +19,14 @@ function App() {
     setThemes(themes.filter((theme) => theme.id !== id));
   }
 
+  function handleEditTheme(editedTheme, id) {
+    console.log("you want to edit a theme with id" +id + "  themeObject should be here: " , editedTheme);
+    
+  
+  } 
+        
+            
+
   return (
     <>
       <header>
@@ -34,6 +42,8 @@ function App() {
               theme={theme}
               name={theme.name}
               onDelete={() => handleDeleteTheme(theme.id)}
+              onEdit={handleEditTheme
+              }
             />
           );
         })}

@@ -25,7 +25,7 @@ export default function ThemeForm({onSubmit}) {
               },
               {
                 role: "surface-on",
-                value: data.surfaceon,
+                value: data["surface-on"],
               },]}
 
               onSubmit(newTheme);
@@ -63,15 +63,15 @@ export default function ThemeForm({onSubmit}) {
         <input
           className="theme-form__color-input"
           type="color"
-          name="surfaceon"
-          id="surfaceon"
+          name="surface-on"
+          id="surface-on"
           defaultValue="#8f4360"
         ></input>
       </fieldset>
-      <div className="theme-form__part-wrapper">
+      <div class="theme-form__part-wrapper">
       <label className="theme-form__label-name" htmlFor="name"> Theme Name:</label>
       <input className="theme-form__name-input" type="text" name="name" id="name" required></input>
-      <button className="theme-form__submit-button" type="submit">
+      <button className="form-submit-button" type="submit">
         
         add your Theme
       </button>
