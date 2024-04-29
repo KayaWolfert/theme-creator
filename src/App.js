@@ -10,6 +10,7 @@ function App() {
     defaultValue: initialThemes,
   });
 
+
   function handleAddTheme(newTheme) {
     setThemes([{ ...newTheme, id: uuid() }, ...themes]);
   }
@@ -19,9 +20,42 @@ function App() {
     setThemes(themes.filter((theme) => theme.id !== id));
   }
 
-  function handleEditTheme(editedTheme, id) {
-    console.log("you want to edit a theme with id" +id + "  themeObject should be here: " , editedTheme);
-    
+  async function getColorName(hexValue) {
+    const cleanHexValue = hexValue.replace("#", "");
+  
+    const response = await fetch(
+      `https://www.thecolorapi.com/id?hex=${cleanHexValue}`
+    );
+    const data = await response.json();
+    return data.name.value;
+  }
+  
+  async function handleEditTheme(editedTheme, id) {
+    console.log("you want to edit a theme with id" +id + "  themeObject : " , editedTheme);
+    const colorNamePromises = editedTheme.colors.map(async (color) => {
+      const name = await getColorName(color.value);
+
+      return {
+        ...color,
+        name,
+      };
+    });
+
+    const colorsWhitNames = await Promise.all(colorNamePromises);
+
+    setThemes(
+      themes.map((theme) => {
+        if (theme.id !== id) {
+          return theme;
+        }
+
+        return {
+          id,
+          name: editedTheme.name,
+          colors: colorsWhitNames,
+        };
+      })
+    );
   
   } 
         
