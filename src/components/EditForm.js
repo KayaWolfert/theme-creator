@@ -25,7 +25,7 @@ export default function EditForm({ onSubmit, theme, id, toggleEdit}) {
           value: data.surface,
         },
         {
-          role: "surfac-eon",
+          role: "surface-on",
           value: data["surface-on"],
         },
       ],
