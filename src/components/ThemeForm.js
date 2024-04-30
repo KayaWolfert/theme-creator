@@ -65,7 +65,7 @@ export default function ThemeForm({onSubmit}) {
           type="color"
           name="surface-on"
           id="surface-on"
-          defaultValue="#8f4360"
+          defaultValue="#000000"
         ></input>
       </fieldset>
       <div class="theme-form__part-wrapper">

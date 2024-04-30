@@ -1,0 +1,35 @@
+.trytheme__article{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.trytheme__headline {
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: -20px;
+}
+
+.trytheme__paragraph {
+    padding: 20px;
+   
+}
+
+.trytheme__highlight-box{
+    padding: 20px;
+    margin: 20px;
+}
+
+.trytheme__button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trytheme__button{
+    padding: 10px;
+}
